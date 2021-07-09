@@ -1,0 +1,114 @@
+.marka {
+  padding-top: 92px;
+  padding-bottom: 94px;
+}
+.marka__text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  /* identical to box height, or 167% */
+  color: #fdd33d;
+  text-align: center;
+}
+.marka__title {
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 59px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #1f1c1c;
+  margin-bottom: 39px;
+}
+.marka__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.marka__item {
+  width: 387px;
+  transition: transform 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.marka__item:hover {
+  transform: scale(1.15);
+}
+
+.marka__list--title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #1f1c1c;
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+.marka_list__text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #c4c4c4;
+  margin-left: 25px;
+  margin-bottom: 20px;
+}
+.marka__item--item {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 25px;
+}
+.marka__item--text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #1f1c1c;
+}
+.marka__item--pay {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+
+  color: #1f1c1c;
+}
+.marka__button {
+  width: 224px;
+  height: 60px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  margin-top: 41px;
+  text-align: center;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border: 3px solid #fdd33d;
+  color: #1f1c1c;
+  transition: background-color 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95),
+    color 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.marka__button:hover,
+.marka__button:focus {
+  background-color: #fdd33d;
+  color: #1f1c1c;
+  //   border: none;
+}

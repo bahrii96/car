@@ -1,0 +1,53 @@
+.we__overlay {
+  position: relative;
+  max-width: 1440px;
+  height: 498px;
+  margin-left: auto;
+  margin-right: auto;
+  //   z-index: -2;
+  //   background-size: cover;
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   background-image: linear-gradient(
+  //       to right,
+  //       rgba(47, 48, 58, 0.8),
+  //       rgba(47, 48, 58, 0.8)
+  //     ),
+  background-image: url("./../../images/cabriolet.jpg");
+}
+.we__box--text {
+  padding-top: 107px;
+  width: 579px;
+  padding-bottom: 217px;
+}
+.we__title {
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 59px;
+  /* identical to box height */
+
+  color: #000000;
+  margin-bottom: 36px;
+}
+.we__text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #000000;
+}
+.we__img--box {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.we__img {
+  transition: transform 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.we__img:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,22 @@
+// .header {
+//   position: absolute;
+// }
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  // background-attachment: fixed;
+}
+.header__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.header__tel {
+  display: flex;
+  flex-wrap: wrap;
+}
+// .header {
+//   padding-bottom: 157px;
+//   padding-top: 19px;
+// }

@@ -1,0 +1,105 @@
+.hero__title--box {
+  padding-top: 208px;
+  width: 500px;
+  z-index: 2;
+  //   margin-left: 400px;
+  position: relative;
+}
+// .hero__img {
+//   min-width: 1440px;
+// }
+.overlay {
+  position: relative;
+  max-width: 1440px;
+  height: 798px;
+  margin-left: auto;
+  margin-right: auto;
+  //   z-index: -2;
+  //   background-size: cover;
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   background-image: linear-gradient(
+  //       to right,
+  //       rgba(47, 48, 58, 0.8),
+  //       rgba(47, 48, 58, 0.8)
+  //     ),
+  background-image: url("./../../images/hero.jpg");
+}
+.overlay::before {
+  content: "";
+  position: absolute;
+  width: 643px;
+  height: 798px;
+  z-index: auto;
+  background-image: url("./../../images/hero_one.jpg");
+}
+.hero__title {
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 59px;
+
+  color: #1f1c1c;
+  margin-bottom: 32px;
+}
+.hero__text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+
+  color: #1f1c1c;
+  margin-bottom: 26px;
+}
+.hero__item {
+  position: relative;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  color: #1f1c1c;
+  margin-bottom: 16px;
+  margin-left: 40px;
+}
+.hero__item::before {
+  position: absolute;
+  content: "";
+  bottom: 40%;
+  left: -40px;
+  width: 21px;
+  height: 4px;
+  background-image: url("./../../images/line.svg");
+}
+.hero__button {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #ffffff;
+
+  width: 326px;
+  height: 60px;
+  transition: all ease 0.3s;
+
+  background: #1f1c1c;
+  border: none;
+  margin-top: 21px;
+  transition: background-color 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95),
+    color 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.hero__button:hover,
+.hero__button:focus {
+  background-color: #ffffff;
+  color: #1f1c1c;
+}
