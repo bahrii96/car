@@ -441,8 +441,8 @@ a {
 }
 
 .marka__item:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .marka__list--title {
@@ -702,8 +702,182 @@ a {
   transition: transform 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95), -webkit-transform 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
-.we__img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+.we__img:nth-child(1):hover + .we__img:nth-child(2) {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.we__img:nth-child(1):hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.we__img:nth-child(2):hover ~ .we__img:nth-child(1) {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.we__img:nth-child(2):hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.pay__text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  /* identical to box height, or 167% */
+  color: #fdd33d;
+  text-align: center;
+}
+
+.pay__title {
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 59px;
+  /* identical to box height */
+  text-align: center;
+  color: #1f1c1c;
+  margin-bottom: 39px;
+}
+
+.pay__box {
+  width: 598px;
+}
+
+.pay__box--img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.car__box {
+  overflow: hidden;
+  position: relative;
+}
+
+.pay__img {
+  -webkit-transition: -webkit-transform 2550ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: -webkit-transform 2550ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: transform 2550ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: transform 2550ms cubic-bezier(0.445, 0.05, 0.55, 0.95), -webkit-transform 2550ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -webkit-transform: translateX(230px);
+          transform: translateX(230px);
+}
+
+.pay:hover .pay__img {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.car__box::before {
+  position: absolute;
+  content: "";
+  top: 315px;
+  left: 111px;
+  z-index: 2;
+  width: 125px;
+  height: 125px;
+  background-size: cover;
+  background-image: url("./../../images/car_bl.png");
+  -webkit-transition: -webkit-transform 2550ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: -webkit-transform 2550ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: transform 2550ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: transform 2550ms cubic-bezier(0.445, 0.05, 0.55, 0.95), -webkit-transform 2550ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -webkit-transform: translateX(230px);
+          transform: translateX(230px);
+}
+
+.pay:hover .car__box::before {
+  -webkit-transform: translateX(0) rotate(-350deg);
+          transform: translateX(0) rotate(-350deg);
+  -webkit-animation: circle-rotate 100s infinite;
+          animation: circle-rotate 100s infinite;
+}
+
+.pay__box--title {
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  color: #1f1c1c;
+  margin-top: 40px;
+  margin-bottom: 32px;
+}
+
+.pay__box--text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1f1c1c;
+  margin-bottom: 49px;
+}
+
+.pay__box--button {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  width: 220px;
+  height: 60px;
+  text-align: center;
+  color: #1f1c1c;
+  background-color: white;
+  border: 3px solid #fdd33d;
+  -webkit-transition: background-color 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95), color 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: background-color 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95), color 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.pay__box--button:hover,
+.pay__box--button:focus {
+  background-color: #fdd33d;
+  color: #1f1c1c;
+}
+
+.pay__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pay__btn {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  width: 220px;
+  height: 60px;
+  text-align: center;
+  color: #1f1c1c;
+  background-color: white;
+  border: 1px solid #eeeff1;
+  -webkit-transition: background-color 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95), color 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: background-color 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95), color 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.pay__btn:hover,
+.pay__btn:focus {
+  background-color: #fdd33d;
+  color: #1f1c1c;
+}
+
+.pay {
+  background: #f8f8f8;
 }
 /*# sourceMappingURL=main.css.map */
