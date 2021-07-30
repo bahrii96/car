@@ -33,6 +33,7 @@
   display: flex;
 }
 .car__box {
+  margin-top: 20px;
   overflow: hidden;
   //   width: 600px;
   position: relative;
@@ -50,7 +51,7 @@
   //   background-color: green;
   //   margin-left: 5px;
   //   z-index: 1;
-  transition: transform 2550ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: transform 2050ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
   //   transform: translateY(calc(-50% + 40px));
   transform: translateX(230px);
   //   overflow: hidden;
@@ -62,16 +63,16 @@
   position: absolute;
   //   position: relative;
   content: "";
-  top: 315px;
-  left: 111px;
+  top: 170px;
+  left: 90px;
   z-index: 2;
-  width: 125px;
-  height: 125px;
+  width: 165px;
+  height: 165px;
   background-size: cover;
   //   animation: circle-rotate 50s infinite;
 
-  background-image: url("./../../images/car_bl.png");
-  transition: transform 2550ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  background-image: url("./../../images/car__ble.png");
+  transition: transform 2050ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
   //   transform: translateY(calc(-50% + 40px));
   transform: translateX(230px);
 }
