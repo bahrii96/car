@@ -8,20 +8,24 @@
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 0;
   transition: ease 1s all;
+  // position: fixed;
+  // z-index: 8;
+  // overflow: scroll;
 }
 
 .form {
-  top: 221px;
+  top: 121px;
   left: 50%;
   width: 528px;
-  height: 581px;
+  height: 450px;
   position: absolute;
   background-color: #ffffff;
   transform: translatex(-50%);
-  z-index: 4;
+  // position: fixed;
+  // z-index: 8;
 }
 .form-title {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -54,7 +58,7 @@
 }
 
 .form-field .form-label {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -71,7 +75,7 @@
 }
 .form-input:focus + .form-label,
 .form-input:not(:placeholder-shown) + .form-label {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -94,29 +98,9 @@
 
   transform: translateY(-50%);
 }
-.form-coment {
-  font-family: Roboto;
-
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.01em;
-
-  color: #757575;
-
-  width: 448px;
-  height: 120px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-
-  border-radius: 4px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 12px 16px 0 16px;
-  resize: none;
-}
 
 .form-button {
-  font-family: Roboto;
+  font-family: Montserrat;
 
   font-weight: bold;
   font-size: 16px;
@@ -126,13 +110,21 @@
 
   width: 200px;
   height: 50px;
-  background-color: #fdd33d;
+  background-color: #1f1c1c;
   border-radius: 4px;
   margin-left: 165px;
 
   border: 0;
+  transition: ease 1s all;
 }
-
+.form-button {
+  &:focus {
+    background-color: #fdd33d;
+  }
+  &:hover {
+    background-color: #fdd33d;
+  }
+}
 .form-button_button {
   position: absolute;
   top: 8px;
@@ -142,8 +134,23 @@
   border-radius: 15px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
+  transition: ease 1s all;
 }
+.form-button_button::before {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  top: 9px;
+  left: 9px;
 
+  background-image: url("./../../images/form/exit.svg");
+}
+.form-button_button {
+  &:hover {
+    background-color: #fdd33d;
+  }
+}
 // .form {
 //   top: 275px;
 //   left: 50%;
@@ -341,4 +348,6 @@
 .form-overlay.active {
   opacity: 1;
   transform: translateX(0);
+  position: fixed;
+  // z-index: 4;
 }
