@@ -444,15 +444,15 @@
         
  <div data-aos="fade-up">
       <ul class="pay__list">
-        <li class="pay__item"> <button class="pay__btn"><a class="pay__btn--link" href="#tab-1"  >Підбір авто</a></button></li>
-        <li class="pay__item"> <button class="pay__btn"> <a class="pay__btn--link" href="#tab-2"  >Огляд авто</a></button></li>
-        <li class="pay__item"> <button class="pay__btn"> <a class="pay__btn--link" href="#tab-3"  >Доставка</a></button></li>
-        <li class="pay__item"> <button class="pay__btn"> <a  class="pay__btn--link"href="#tab-4"  >Розмитнення</a></button></li>
-        <li class="pay__item"> <button class="pay__btn"> <a class="pay__btn--link" href="#tab-5"  >Сертифікація</a></button></li>
+        <li class="pay__item"> <button class="pay__btn source source-1"><a class="pay__btn--link " href="#tab-1"  >Підбір авто</a></button></li>
+        <li class="pay__item"> <button class="pay__btn source source-2"> <a class="pay__btn--link " href="#tab-2"  >Огляд авто</a></button></li>
+        <li class="pay__item"> <button class="pay__btn source source-3"> <a class="pay__btn--link " href="#tab-3"  >Доставка</a></button></li>
+        <li class="pay__item"> <button class="pay__btn source source-4"> <a  class="pay__btn--link "href="#tab-4"  >Розмитнення</a></button></li>
+        <li class="pay__item"> <button class="pay__btn source source-5"> <a class="pay__btn--link " href="#tab-5"  >Сертифікація</a></button></li>
       </ul></div>
     
-       <div class="pay__box">
-      <div id="tab-1">
+       <div class="pay__box target target-1">
+      <!-- <div id="tab-1"> -->
     
             <div data-aos="fade-right">
             <h3 class="pay__box--title">Підбір авто</h3></div>
@@ -462,8 +462,8 @@
             </div>
       </div>
       
-      <div class="pay__box">
-    <div id="tab-2">
+      <div class="pay__box target target-2">
+    <!-- <div id="tab-2"> -->
     
             <div data-aos="fade-right">
             <h3 class="pay__box--title">Огляд авто</h3></div>
@@ -473,8 +473,8 @@
             </div>
       </div>
       
-      <div class="pay__box">
-    <div id="tab-3">
+      <div class="pay__box target target-3">
+    <!-- <div id="tab-3"> -->
     
             <div data-aos="fade-right">
             <h3 class="pay__box--title">Доставка</h3></div>
@@ -484,8 +484,8 @@
             </div>
       </div>
      
-       <div class="pay__box">
-      <div id="tab-4">
+       <div class="pay__box target target-4">
+      <!-- <div id="tab-4"> -->
     
             <div data-aos="fade-right">
             <h3 class="pay__box--title">Розмитнення</h3></div>
@@ -495,8 +495,8 @@
             </div>
       </div>
        
-       <div class="pay__box">
-    <div id="tab-5">
+       <div class="pay__box target target-5">
+    <!-- <div id="tab-5"> -->
     
             <div data-aos="fade-right">
             <h3 class="pay__box--title">Сертифікація</h3></div>
@@ -630,7 +630,27 @@ availability" onclick="toggleAvailability();" >
 
 </div></div></div>
     
-</section> 
+</section>
+
+
+<!-- <ul>
+  <li><a class="source source-1">Кнопка один</a></li>
+  <li><a class="source source-2">И кнопка два</a></li>
+  <li><a class="source source-3">Три!333</a></li>
+</ul>
+<div class="target target-1">
+  <h1>Lorem ipsum dolor sit amet</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla molestiae eveniet non modi perspiciatis velit doloribus autem vel pariatur laborum ad, quae ducimus, ut, earum neque deserunt? Debitis, minima, eius.</p>
+</div>
+<div class="target target-2">
+  <img src="https://placekitten.com/100/150" alt=""> <img src="https://placekitten.com/100/100" alt=""> <img src="https://placekitten.com/100/200" alt=""> <img src="https://placekitten.com/150/100" alt="">
+</div>
+<div class="target target-3">
+	<h1>Отлично!</h1>
+</div> -->
+
+
+
       <div class="container "> 
 <div class="form-overlay  " id="form">
 <div class="form">
@@ -648,13 +668,16 @@ availability" onclick="toggleAvailability();" >
 <div class="form-field"><input type="email" class="form-input" name="mail" id="mail" placeholder=" "/>
    <label for="mail" class="form-label">Почта</label>
    <img src="./images/form/mail.svg" alt="" class="icon" width="15px"></div>
-<button type="submit" class="
-   form-button"> Отправить  </button>
-   <button type="submit" class="btn cancel form-button_button " onclick="closeForm()"></button>
-    <button type="button" class="form-button_button " onclick="show('retrieve');"  ></button> 
-    
-
-</form></div></div></div>
+   <button type="submit" class="form-button">Отправить</button>
+              <button
+                type="submit"
+                class="btn cancel form-button_button"
+                onclick="closeForm()"
+              ></button>
+            </form>
+          </div>
+        </div>
+      </div>
 
 
 <!-- форма авто в наявності -->

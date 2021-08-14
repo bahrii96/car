@@ -1121,6 +1121,10 @@ a {
   opacity: 1;
 }
 
+.hidden {
+  display: none;
+}
+
 .form-overlay {
   position: absolute;
   top: 0;
