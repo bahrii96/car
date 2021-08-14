@@ -1,3 +1,7 @@
+.pay {
+  padding-top: 92px;
+  padding-bottom: 78px;
+}
 .pay__text {
   font-family: Montserrat;
   font-style: normal;
@@ -65,7 +69,7 @@
   content: "";
   top: 170px;
   left: 90px;
-  z-index: 2;
+  z-index: 1;
   width: 165px;
   height: 165px;
   background-size: cover;
@@ -130,23 +134,19 @@
   color: #1f1c1c;
   //   border: none;
 }
-.pay__item {
+.pay__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 .pay__btn {
   position: relative;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
+
   line-height: 20px;
   /* identical to box height */
   width: 220px;
   height: 60px;
   text-align: center;
-  color: #1f1c1c;
 
   background-color: white;
   border: 1px solid #eeeff1;
@@ -154,12 +154,40 @@
   transition: background-color 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95),
     color 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
+.pay__btn--link {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1f1c1c;
+}
 .pay__btn:hover,
 .pay__btn:focus {
   background-color: #fdd33d;
   color: #1f1c1c;
   //   border: none;
 }
+// #highlight,
+// #highlight:hover,
+// #highlight:active,
+// #highlight:focus {
+//   background-color: #fdd33d;
+//   color: #1f1c1c;
+// }
+// .pay__btn::after #highlight,
+// #highlight:hover,
+// #highlight:active,
+// #highlight:focus {
+//   background-color: #fdd33d;
+//   color: #1f1c1c;
+// }
+.pay__box--one {
+  display: none;
+}
+// .pay__btn--one:focus .pay__box--one {
+//   display: block;
+// }
 .pay {
   background: #f8f8f8;
 }
@@ -178,3 +206,6 @@
 .pay__btn:focus.pay__btn::after {
   opacity: 1;
 }
+// .pay__box {
+//   display: none;
+// }

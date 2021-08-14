@@ -1,19 +1,36 @@
-// .header {
-//   position: absolute;
-// }
+.header {
+  // background-color: #c4c4c4;
+  // position: absolute;
+  // z-index: 2;
+  display: none;
+}
 .header__container {
   position: relative;
+  max-width: 1440px;
+  // //   height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  //   background-color: #c4c4c4;
 }
 .nav {
   position: absolute;
+  // top: 0;
+  // left: 0;
+  // right: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   z-index: 2;
   position: fixed;
-  width: 1200px;
-  margin-top: 20px;
+  width: 1440px;
+  padding-left: 120px;
+  padding-right: 120px;
+  // width: 1200px;
+  // margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   align-items: center;
+  // padding: -60px;
   background-color: #c4c4c4;
   // background-attachment: fixed;
 }
@@ -109,6 +126,57 @@
   width: 22px;
   height: 2.5px;
 }
+.mobile__bar:focus .nav__span {
+  display: none;
+}
+
+// .mobile__bar:focus .nav__span:nth-child(1) {
+//   transform: rotate(45deg);
+//   top: 19px;
+
+//   left: 25%;
+// }
+// .mobile__bar:focus .nav__span:nth-child(2) {
+//   display: none;
+// }
+// .mobile__bar:focus .nav__span:nth-child(3) {
+//   transform: rotate(-45deg);
+//   top: 19px;
+//   left: 25%;
+// }
+.header-button {
+  // --offset-horizontal:11px:
+  // --offset-vertical: 14px;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  background-color: #009231;
+  border: none;
+  padding: 14px 11px;
+  display: inline-block;
+  display: none;
+}
+// .button-span {
+//   position: absolute;
+//   top: 14px;
+//   left: 50%;
+//   display: inline-block;
+//   width: 20px;
+//   // width: 100%;
+//   // width: calc(100% - (14px * 2));
+//   height: 2px;
+//   background-color: black;
+//   transform: translateX(-50%);
+//   transition: transform 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+//   &:nth-child(2) {
+//     top: 14px + 5px;
+//   }
+//   &:nth-child(3) {
+//     top: 14px + 10px;
+//   }
+// }
+
 .menu__list {
   transition: ease 1s all;
   transform: translateX(-420px);
@@ -117,7 +185,7 @@
   display: flex;
   position: absolute;
   left: 0;
-  top: -29px;
+  top: -9px;
   width: 400px;
   min-height: 10000%;
   margin: 0;
@@ -144,7 +212,7 @@
 }
 .menu__list.active {
   opacity: 1;
-  transform: translateX(-122px);
+  transform: translateX(-22px);
 
   background: white;
 }
@@ -158,5 +226,8 @@
   // width: 1500px;
   // width: 700px;
   display: flex;
-  justify-content: flex-end;
+  // justify-content: flex-end;
+}
+.logo {
+  display: inline-block;
 }

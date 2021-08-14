@@ -16,7 +16,7 @@
   background-image: url("./../../images/services.jpg");
 }
 .services__box {
-  width: 590px;
+  max-width: 590px;
   padding-top: 95px;
   // display: inline-block;
   float: right;

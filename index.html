@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сar</title>
-    <link rel="stylesheet" href="./dist/css/main.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<link rel="shortcut icon" href="car.png" type="image/png">  
-</head>
+
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="car.png" type="image/png" />
+  </head>
   <body>
     <header class="header  ">
-      <div class="container header__container">
+      <div class="containe header__container">
         <nav class="nav ">
           <a href="" class="header__link">
             <img
@@ -49,13 +50,13 @@
 
      
 <ul class="menu__list " id="menu">
-    <li class="menu__item" ><a href="" class="menu__link">Наші переваги</a></li>
-    <li class="menu__item"><a href="" class="menu__link">Нашi послуги</a></li>
-    <li class="menu__item"><a href="" class="menu__link">Наші кейси</a></li>
-    <li class="menu__item"><a href="" class="menu__link">Купуй легко</a></li>
-    <li class="menu__item"><a href="" class="menu__link">Наші відгуки</a></li>
-    <li class="menu__item"><a href="" class="menu__link">Про нас</a></li>
-</ul>
+    <li class="menu__item" ><a   class="menu__link  " href="#tabs-1"  >Наші переваги</a></li>
+    <li class="menu__item"><a  class="menu__link " href="#tabs-2">Нашi послуги</a></li>
+    <li class="menu__item"><a  class="menu__link " href="#tabs-3">Наші кейси</a></li>
+    <li class="menu__item"><a   class="menu__link " href="#tabs-4">Купуй легко</a></li>
+    <li class="menu__item"><a   class="menu__link " href="#tabs-5">Наші відгуки</a></li>
+    <li class="menu__item"><a   class="menu__link " href="#tabs-6">Про нас</a></li>
+</ul> 
 <div class="mobile__bar" onclick="toggleMobileMenu();" >
     <span class="nav__span"></span>
     <span class="nav__span"></span>
@@ -68,34 +69,33 @@
     </header>
 
     <main>
-<section class="hero overlay">
-    
-    <div class="container"> 
-        <div class="hero__title--box">
-           
+      <section class="hero overlay">
+        <div class="container">
+          <div class="hero__title--box">
             <h1 class="hero__title">ПЕРЕВIРЕНI АВТО З АУКЦІОНІВ ЄВРОПИ</h1>
-            <p class="hero__text">Ми працюємо із західноєвропейськими компаніями, які керують найбільшими парками лізингових автомобілів</p>
-        <ul class="hero__list">
-            <li class="hero__item">
-Швидка і безкоштовна реєстрація
-            </li>
-             <li class="hero__item">
-                Швидка і безкоштовна реєстрація
-          </li>
+            <p class="hero__text">
+              Ми працюємо із західноєвропейськими компаніями, які керують
+              найбільшими парками лізингових автомобілів
+            </p>
+            <ul class="hero__list">
+              <li class="hero__item">Швидка і безкоштовна реєстрація</li>
+              <li class="hero__item">Швидка і безкоштовна реєстрація</li>
+
+              <li class="hero__item">Швидка і безкоштовна реєстрація</li>
+            </ul>
+            <div data-aos="fade-up">
+              <div class="registration" onclick="toggleRegistration();">
+                <button type="button" class="hero__button">
+                  Зареєструйся безкоштовно
+                </button>
+              </div>
+            </div>
+          </div>
         
-         <li class="hero__item">
-              Швидка і безкоштовна реєстрація  
-            </li>
-        
-        </ul> <div data-aos="fade-up">
-<div class="registration" onclick="toggleRegistration();" >
-        <button type="button" class="hero__button">Зареєструйся безкоштовно</button>
-        </div></div></div>
-        <!-- <img src="./images/hero.jpg" width="1440" height="798" alt="автомобіль" class="hero__img"> -->
-   
-</div></section>
-<section class="advantage">
-    <div class="container">
+        </div>
+      </section>
+      <section class="advantage" id="tabs-1">
+    <div class="container" >
         <div data-aos="fade-right">
     <p class="advantage__text">Чому ми?</p>
     <div data-aos="fade-left">
@@ -127,13 +127,13 @@
     </ul> 
     <div data-aos="fade-up">
 <div class="registration" onclick="toggleRegistration();" >
-<button class="advantage__button">Зареєструйся безкоштовно</button>
+<button class="advantage__button"  >Зареєструйся безкоштовно</button>
 </div></div></div></section>
 
-<section class="services serviced__img" >
-<div class="container">
+      <section class="services serviced__img" id="tabs-2">
+<div class="container" >
 <!-- <img src="./images/winter.jpg" alt="зима" width="628" height="498" class="serviced__img"> -->
-<div class="services__box">
+      <div class="services__box">
     <div data-aos="fade-right">
 <p class="services__text">Що ми пропонуємо</p></div>
 <div data-aos="fade-left">
@@ -143,15 +143,19 @@
 </div>
 <div class="button__box">
   <div data-aos="flip-left">
-<button type="button" class="services__button">Авто в наявності</button></div>
+<div class="availability" onclick="toggleAvailability();" >
+
+<button type="button" class="services__button">Авто в наявності</button></div></div>
 <div data-aos="flip-right">
+    <div class="europe" onclick="toggleEurope();" >
 <button type="button" class="services__button">Авто в європі</button></div>
-</div></div>
+</div></div></div>
 </div>
 </section>
+     
 
-<section class="marka">
-    <div class="container"><div data-aos="fade-right">
+      <section class="marka"id="tabs-3">
+    <div class="container" ><div data-aos="fade-right">
         <p class="marka__text">Що ми підібрали клієнтам</p></div>
         <div data-aos="fade-left">
         <h2 class="marka__title">Наші кейси</h2></div>
@@ -230,9 +234,43 @@
                     <li class="marka__item--item">
                         <p class="marka__item--text">Выгода</p>
                         <p class="marka__item--pay">20 $</p>
+                    </li></div></ul>
+
+
+
+                    <li class="marka__item marka__item--one"><div data-aos="fade-up">
+                
+                <img src="./images/bmw.jpg" width="387"  height="358" alt="автомобіль" class="marka__list--img">
+                </div>
+                <div data-aos="fade-up">
+                <h3 class="marka__list--title">BMW x5 для Виктора Петрова
+из Германии
+                </h3></div>
+                <div data-aos="fade-up">
+                <p class="marka_list__text">02.04.21</p></div>
+                <ul class="marka__item--list"><div data-aos="fade-up">
+                    <li class="marka__item--item">
+                        <p class="marka__item--text">Цена под ключ</p>
+                        <p class="marka__item--pay">1 000 $</p>
+                    </li>
+                    <li class="marka__item--item">
+                        <p class="marka__item--text">Аналогичная цена в Украине</p>
+                        <p class="marka__item--pay"> 1 020 $</p>
+                    </li>
+                    <li class="marka__item--item">
+                        <p class="marka__item--text">Выгода</p>
+                        <p class="marka__item--pay">20 $</p>
                     </li></div>
                 </ul>
+                
+                </ul>
+
+
+
         </ul>
+
+
+
         <div class="marka__box" id="more">
              <ul class="marka__list">
             <li class="marka__item"><div data-aos="fade-up">
@@ -390,40 +428,101 @@
         </ul>
         </div>
         <div data-aos="fade-up">
-        <div class="marka__more" onclick="toggleMore();" >
-        <button type="button" class="marka__button">Показати більше</button></div></div>
+        <div class="marka__more" onclick="toggleMore();"  >
+        <button type="button"  class="marka__button" data-secondname="Сховати">Показати більше</button></div></div>
     </div>
 </section>
-<section class="pay">
-    <div class="container">
+      <section class="pay"id="tabs-4">
+    <div class="container" >
         <div data-aos="fade-right">
         <p class="pay__text">Як це працює</p></div>
         <div data-aos="fade-left">
         <h2 class="pay__title">Купуй легко</h2></div>
-        <ul class="pay__list"><div data-aos="fade-up">
-<li class="pay__item">
-<button class="pay__btn">Підбір авто</button>
-<button class="pay__btn">Огляд авто</button>
-<button class="pay__btn">Доставка</button>
-<button class="pay__btn">Розмитнення</button>
-<button class="pay__btn">Сертифікація</button>
- </li></div>
-
-        </ul> <div class="pay__box--img">
-        <div class="pay__box">
+      
+ 
+     
+        
+ <div data-aos="fade-up">
+      <ul class="pay__list">
+        <li class="pay__item"> <button class="pay__btn"><a class="pay__btn--link" href="#tab-1"  >Підбір авто</a></button></li>
+        <li class="pay__item"> <button class="pay__btn"> <a class="pay__btn--link" href="#tab-2"  >Огляд авто</a></button></li>
+        <li class="pay__item"> <button class="pay__btn"> <a class="pay__btn--link" href="#tab-3"  >Доставка</a></button></li>
+        <li class="pay__item"> <button class="pay__btn"> <a  class="pay__btn--link"href="#tab-4"  >Розмитнення</a></button></li>
+        <li class="pay__item"> <button class="pay__btn"> <a class="pay__btn--link" href="#tab-5"  >Сертифікація</a></button></li>
+      </ul></div>
+    
+       <div class="pay__box">
+      <div id="tab-1">
+    
             <div data-aos="fade-right">
             <h3 class="pay__box--title">Підбір авто</h3></div>
             <div data-aos="fade-right">
             <p class="pay__box--text">Не следует, однако забывать, что реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Повседневная практика показывает, что рамки и место обучения кадров в значительной степени обуславливает создание модели развития. Товарищи! укрепление и развитие структуры представляет собой интересный эксперимент проверки форм развития.</p>
+             
             </div>
+      </div>
+      
+      <div class="pay__box">
+    <div id="tab-2">
+    
             <div data-aos="fade-right">
-            <button type="button" class="pay__box--button">Авто в наявності</button></div>
+            <h3 class="pay__box--title">Огляд авто</h3></div>
+            <div data-aos="fade-right">
+            <p class="pay__box--text">Не следует, однако забывать, что реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Повседневная практика показывает, что рамки и место обучения кадров в значительной степени обуславливает создание модели развития. Товарищи! укрепление и развитие структуры представляет собой интересный эксперимент проверки форм развития.</p>
+             
+            </div>
+      </div>
+      
+      <div class="pay__box">
+    <div id="tab-3">
+    
+            <div data-aos="fade-right">
+            <h3 class="pay__box--title">Доставка</h3></div>
+            <div data-aos="fade-right">
+            <p class="pay__box--text">Не следует, однако забывать, что реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Повседневная практика показывает, что рамки и место обучения кадров в значительной степени обуславливает создание модели развития. Товарищи! укрепление и развитие структуры представляет собой интересный эксперимент проверки форм развития.</p>
+             
+            </div>
+      </div>
+     
+       <div class="pay__box">
+      <div id="tab-4">
+    
+            <div data-aos="fade-right">
+            <h3 class="pay__box--title">Розмитнення</h3></div>
+            <div data-aos="fade-right">
+            <p class="pay__box--text">Не следует, однако забывать, что реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Повседневная практика показывает, что рамки и место обучения кадров в значительной степени обуславливает создание модели развития. Товарищи! укрепление и развитие структуры представляет собой интересный эксперимент проверки форм развития.</p>
+             
+            </div>
+      </div>
+       
+       <div class="pay__box">
+    <div id="tab-5">
+    
+            <div data-aos="fade-right">
+            <h3 class="pay__box--title">Сертифікація</h3></div>
+            <div data-aos="fade-right">
+            <p class="pay__box--text">Не следует, однако забывать, что реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Повседневная практика показывает, что рамки и место обучения кадров в значительной степени обуславливает создание модели развития. Товарищи! укрепление и развитие структуры представляет собой интересный эксперимент проверки форм развития.</p>
+             
+            </div>
+      </div>
+    
+
+ 
+
+
+
+
+            <div data-aos="fade-right">
+
+                <div class="
+availability" onclick="toggleAvailability();" >
+            <button type="button"   class="pay__box--button">Авто в наявності</button></div></div>
         </div> <div class="car__box">
         <img src="./images/car__black.png"   height="328" alt="" class="pay__img">
     </div></div></div>
 </section>
-<section class="reviews">
-    <div class="container">
+<section class="reviews"id="tabs-5">
+    <div class="container" >
         <div data-aos="fade-right">
         <p class="reviews__text">Що про нас говорять</p></div>
         <div data-aos="fade-left">
@@ -450,7 +549,16 @@
                 <h3 class="reviews__name">Анна Петрова</h3>
                 <p class="reviews__list--data">02.04.21</p>
                 <p class="reviews__list--text">Не следует, однако забывать, что реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Не следует, однако забывать, что реализация намеченных. </p>
-            </div></li></ul></div>
+            </div></li>
+          
+          <li class="reviews__item reviews__item--one">
+                <img src="./images/rev_one.jpg" width="152" height="191" alt="автомобіль" class="reviews__list--img">
+                <div class="reviews__box">
+                <h3 class="reviews__name">Анна Петрова</h3>
+                <p class="reviews__list--data">02.04.21</p>
+                <p class="reviews__list--text">Не следует, однако забывать, что реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Не следует, однако забывать, что реализация намеченных. </p>
+            </div></li>
+          </ul></div>
 
 
             <div class="reviews__box--box" id="reviews">
@@ -500,34 +608,34 @@
             </div>
             <div data-aos="fade-up">
                 <div class="reviews__more" onclick="toggleReviews();" >
-        <button class="reviews__but">Показати більше</button></div></div>
+        <button class="reviews__but" data-secondname="Сховати">Показати більше</button></div></div>
         
     
     </div>
 </section>
-<section class="we we__overlay">
-    <div class="container">
+<section class="we we__overlay"id="tabs-6">
+    <div class="container" >
         <div class="we__box">
             <div class="we__box--text">
                 <div data-aos="fade-right">
             <h2 class="we__title">Про нас</h2>
             <div data-aos="fade-right">
             <p class="we__text">Не следует, однако забывать, что реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Повседневная практика показывает, что рамки и место обучения кадров в значительной степени обуславливает создание модели развития. Товарищи! укрепление и развитие структуры представляет собой интересный эксперимент проверки форм развития. Повседневная практика показывает, что рамки и место обучения кадров в значительной степени обуславливает создание модели развития.</p></div>
-            <!-- <img src="./images/we_cabriolet.jpg" width="677" height="498" alt="автомобіль" class="we__box--img"> -->
-        </div></div>
+         </div></div>
         <div class="we__box--box">
         <div class="we__img--box">
             <div data-aos="fade-up-right">
         <img src="./images/we_grey.jpg" alt="автомобіль" width="590" height="332" class="we__img"></div></div>
        <div class="we__img--box"> <div data-aos="fade-up-left"><img src="./images/we_wreet.jpg" alt="автомобіль" width="590" height="332" class="we__img"></div>
 
-</div></div>
-    </div>
+</div></div></div>
+    
 </section> 
-<div class="container "> 
+      <div class="container "> 
 <div class="form-overlay  " id="form">
 <div class="form">
-  <p class="form-title">Залиште свої данні,ми вам зателефонуємо</p>
+    <h2 class="form-title">Зареєструйся безкоштовно</h2>
+  <p class="form-text">Заповніть форму нижче і наш менеджер зв'яжеться з Вами</p>
  <form class="js-speaker-form">
   <div class="form-field"><input type="text" class="form-input" name="name" id="name" placeholder=" " autocomplete="off"/>
   <label for="name" class="form-label">Имя</label>
@@ -542,17 +650,158 @@
    <img src="./images/form/mail.svg" alt="" class="icon" width="15px"></div>
 <button type="submit" class="
    form-button"> Отправить  </button>
-   <button type="button" class="form-button_button" ></button>   
+   <button type="submit" class="btn cancel form-button_button " onclick="closeForm()"></button>
+    <button type="button" class="form-button_button " onclick="show('retrieve');"  ></button> 
+    
 
 </form></div></div></div>
 
 
+<!-- форма авто в наявності -->
+      <div class="container">
+        <div class="form-overlay" id="form_availability">
+          <div class="form">
+            <h2 class="form-title">Авто на складі</h2>
+            <p class="form-text">
+              Заповніть форму нижче і наш менеджер зв'яжеться з Вами
+            </p>
+            <form class="js-speaker-form">
+              <div class="form-field">
+                <input
+                  type="text"
+                  class="form-input"
+                  name="name"
+                  id="name"
+                  placeholder=" "
+                  autocomplete="off"
+                />
+                <label for="name" class="form-label">Имя</label>
+                <img
+                  src="./images/form/name.svg"
+                  alt=""
+                  class="icon"
+                  width="15px"
+                />
+              </div>
+              <div class="form-field">
+                <input
+                  type="tel"
+                  class="form-input"
+                  name="tel"
+                  id="tel"
+                  placeholder=" "
+                />
+                <label for="tel" class="form-label">Tелефон</label>
+                <img
+                  src="./images/form/tel.svg"
+                  alt=""
+                  class="icon"
+                  width="15px"
+                />
+              </div>
+              <div class="form-field">
+                <input
+                  type="email"
+                  class="form-input"
+                  name="mail"
+                  id="mail"
+                  placeholder=" "
+                />
+                <label for="mail" class="form-label">Почта</label>
+                <img
+                  src="./images/form/mail.svg"
+                  alt=""
+                  class="icon"
+                  width="15px"
+                />
+              </div>
+              <button type="submit" class="form-button">Отправить</button>
+              <button
+                type="submit"
+                class="btn cancel form-button_button"
+                onclick="closeForm()"
+              ></button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- авто в європі -->
+      <div class="container">
+        <div class="form-overlay" id="form_europe">
+          <div class="form">
+            <h2 class="form-title">Авто в Європі</h2>
+            <p class="form-text">
+              Заповніть форму нижче і наш менеджер зв'яжеться з Вами
+            </p>
+            <form class="js-speaker-form">
+              <div class="form-field">
+                <input
+                  type="text"
+                  class="form-input"
+                  name="name"
+                  id="name"
+                  placeholder=" "
+                  autocomplete="off"
+                />
+                <label for="name" class="form-label">Имя</label>
+                <img
+                  src="./images/form/name.svg"
+                  alt=""
+                  class="icon"
+                  width="15px"
+                />
+              </div>
+              <div class="form-field">
+                <input
+                  type="tel"
+                  class="form-input"
+                  name="tel"
+                  id="tel"
+                  placeholder=" "
+                />
+                <label for="tel" class="form-label">Tелефон</label>
+                <img
+                  src="./images/form/tel.svg"
+                  alt=""
+                  class="icon"
+                  width="15px"
+                />
+              </div>
+              <div class="form-field">
+                <input
+                  type="email"
+                  class="form-input"
+                  name="mail"
+                  id="mail"
+                  placeholder=" "
+                />
+                <label for="mail" class="form-label">Почта</label>
+                <img
+                  src="./images/form/mail.svg"
+                  alt=""
+                  class="icon"
+                  width="15px"
+                />
+              </div>
+              <button type="submit" class="form-button">Отправить</button>
+              <button
+                type="submit"
+                class="btn cancel form-button_button"
+                onclick="closeForm()"
+              ></button>
+            </form>
+          </div>
+        </div>
+      </div>
+      
     </main>
-   
+     
       <script src="script.js"></script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
  <script>
   AOS.init();
-</script>
-</body>
+</script> 
+  
+  </body>
 </html>

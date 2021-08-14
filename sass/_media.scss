@@ -1,0 +1,274 @@
+@media screen and (max-width: 1350px) {
+  .header__box--one {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mobile__bar {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .services__box {
+    max-width: 490px;
+  }
+
+  // .marka__item--one {
+  //   display: block;
+  // }
+  .marka__item {
+    width: 340px;
+  }
+  .marka__list--img {
+    width: 340px;
+    height: 318px;
+  }
+
+  .reviews__item {
+    position: relative;
+    width: 338px;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .advantage__item {
+    max-width: 200px;
+  }
+
+  .overlay {
+    position: relative;
+    max-width: 1190px;
+    height: 658px;
+
+    margin-left: auto;
+    margin-right: auto;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    background-size: cover;
+    background-image: url("./../../images/heroone.jpg");
+  }
+  .overlay::before {
+    display: none;
+  }
+  .hero {
+    display: flex;
+  }
+  .hero__title--box {
+    padding-top: 158px;
+    width: 900px;
+    // align-items: center;
+    // align-content: center;
+    justify-content: center;
+  }
+  .serviced__img {
+    //   position: relative;
+    max-width: 1190px;
+    height: 586px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("./../../images/servicesone.jpg");
+  }
+  .services__box {
+    max-width: 790px;
+    float: none;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pay__btn {
+    max-width: 180px;
+  }
+  .we__overlay {
+    position: relative;
+    max-width: 1190px;
+    height: 426px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("./../../images/cabriolet_one.jpg");
+  }
+  .we__box--text {
+    width: 950px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .marka__item--one {
+    display: block;
+    // width: 447px;
+    // margin-bottom: 50px;
+  }
+  .marka__item {
+    width: 447px;
+    margin-bottom: 20px;
+    margin-bottom: 50px;
+  }
+  .marka__list--img {
+    width: 447px;
+    height: 418px;
+  }
+  .reviews__item--one {
+    display: flex;
+  }
+  .reviews__item {
+    width: 400px;
+    justify-content: space-evenly;
+  }
+  .reviews__list {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .we__box--text {
+    width: 850px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .we__img {
+    height: 252px;
+    // width: 490px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .marka__item {
+    width: 387px;
+    margin-bottom: 20px;
+    margin-bottom: 50px;
+  }
+  .marka__list--img {
+    width: 387px;
+    height: 358px;
+  }
+  .we__box--text {
+    width: 650px;
+  }
+
+  .pay__btn {
+    max-width: 300px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    // display: flex;
+    // justify-content: flex-start;
+  }
+  .pay__list {
+    justify-content: center;
+    // align-content: center;
+  }
+}
+@media screen and (max-width: 950px) {
+  .hero__title--box {
+    // padding-top: 158px;
+    width: 700px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .advantage__item {
+    max-width: 400px;
+    margin: 30px;
+  }
+  .advantage__item--img {
+    width: 100px;
+  }
+  .advantage__list {
+    justify-content: center;
+  }
+  .services__box {
+    max-width: 600px;
+  }
+  .marka__item {
+    width: 300px;
+    margin-bottom: 20px;
+    margin-bottom: 50px;
+  }
+  .marka__list--img {
+    width: 300px;
+    height: 290px;
+  }
+  .marka__list {
+    justify-content: space-evenly;
+  }
+  .pay__btn {
+    width: 280px;
+  }
+  .we__img {
+    height: 422px;
+    // width: 490px;
+    margin-bottom: 40px;
+  }
+  .we__box--box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .reviews__item {
+    width: 300px;
+    // justify-content: start;
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .hero__title--box {
+    padding-top: 108px;
+    width: 500px;
+  }
+  .overlay {
+    height: 558px;
+  }
+  .advantage__item {
+    width: 482px;
+    margin: 10px;
+  }
+  .advantage {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .marka__item--one {
+    display: none;
+  }
+  .marka__item {
+    width: 400px;
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .marka__list--img {
+    width: 400px;
+    height: 370px;
+  }
+  .pay__btn {
+    width: 180px;
+  }
+  .pay {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .reviews__item--one {
+    display: none;
+  }
+  .reviews__item {
+    width: 400px;
+  }
+  .reviews {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .we__box--text {
+    padding-top: 40px;
+    width: 400px;
+    padding-bottom: 120px;
+  }
+
+  .we__img {
+    display: none;
+  }
+}

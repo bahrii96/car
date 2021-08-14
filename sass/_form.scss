@@ -8,8 +8,8 @@
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 0;
   transition: ease 1s all;
-  // position: fixed;
-  // z-index: 8;
+  position: fixed;
+  z-index: 3;
   // overflow: scroll;
 }
 
@@ -22,18 +22,28 @@
   background-color: #ffffff;
   transform: translatex(-50%);
   // position: fixed;
-  // z-index: 8;
+  // z-index: 4;
 }
 .form-title {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 23px;
   text-align: center;
   padding-top: 40px;
   padding-bottom: 30px;
   margin: 0;
+}
+.form-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+
+  padding-bottom: 30px;
 }
 
 .form-field {
