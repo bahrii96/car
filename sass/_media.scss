@@ -28,6 +28,12 @@
     position: relative;
     width: 338px;
   }
+  .car__box::before {
+    display: none;
+  }
+  .pay__img {
+    transform: translateX(0);
+  }
 }
 
 @media screen and (max-width: 1160px) {
@@ -84,6 +90,9 @@
   .pay__btn {
     max-width: 180px;
   }
+  .pay__img {
+    height: 250px;
+  }
   .we__overlay {
     position: relative;
     max-width: 1190px;
@@ -116,6 +125,9 @@
   .marka__list--img {
     width: 447px;
     height: 418px;
+  }
+  .pay__img {
+    height: 200px;
   }
   .reviews__item--one {
     display: flex;
@@ -156,10 +168,27 @@
 
   .pay__btn {
     max-width: 300px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     margin-left: 40px;
     // display: flex;
     // justify-content: flex-start;
+  }
+  .pay__two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .pay__box {
+    width: 700px;
+    // display: inline-block;
+    // justify-content: center;
+    align-items: center;
+  }
+  .pay__box--title {
+    text-align: center;
+  }
+  .pay__img {
+    display: none;
   }
   .pay__list {
     justify-content: center;
@@ -199,7 +228,10 @@
     justify-content: space-evenly;
   }
   .pay__btn {
-    width: 280px;
+    width: 160px;
+  }
+  .pay__box {
+    width: 650px;
   }
   .we__img {
     height: 422px;
@@ -230,8 +262,12 @@
     margin: 10px;
   }
   .advantage {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .marka {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .marka__item--one {
     display: none;
@@ -246,8 +282,18 @@
     height: 370px;
   }
   .pay__btn {
-    width: 180px;
+    width: 130px;
+    height: 40px;
   }
+  .pay__box--title {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0;
+  }
+  .pay__box--text {
+    margin-bottom: 15px;
+  }
+
   .pay {
     padding-top: 40px;
     padding-bottom: 40px;
