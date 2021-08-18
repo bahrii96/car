@@ -1611,7 +1611,7 @@ a {
     height: 558px;
   }
   .advantage__item {
-    width: 482px;
+    width: 235px;
     margin: 10px;
   }
   .advantage {
@@ -1719,6 +1719,9 @@ a {
   .pay__box {
     width: 500px;
   }
+  .marka__item--item {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -1735,6 +1738,10 @@ a {
   .hero__title--box {
     padding-top: 28px;
     width: 420px;
+  }
+  .advantage__item {
+    width: 155px;
+    margin: 10px;
   }
 }
 
@@ -1756,6 +1763,80 @@ a {
     font-size: 30px;
     line-height: 35px;
     margin-bottom: 12px;
+  }
+  .advantage__item {
+    width: 135px;
+    margin: 10px;
+  }
+  .advantage__title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .advantage__button {
+    width: 100%;
+  }
+  .button__box {
+    display: block;
+  }
+  .services__box {
+    padding-top: 25px;
+  }
+  .services__button {
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+  }
+  .marka__item {
+    width: 155px;
+  }
+  .marka__list--img {
+    width: 155px;
+    height: 140px;
+  }
+  .marka_list__text {
+    margin-left: 15px;
+  }
+  .marka__button {
+    margin-top: 21px;
+  }
+  .pay {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .pay__title {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  .pay__btn {
+    width: 120px;
+  }
+  .pay__box--title {
+    font-size: 30px;
+  }
+  .reviews {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .reviews__title {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  .we__box--text {
+    padding-top: 20px;
+    width: 320px;
+  }
+  .we__title {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  .header__list {
+    display: none;
+  }
+  .footer__list {
+    display: none;
+  }
+  .menu__list {
+    display: none;
   }
 }
 
