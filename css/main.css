@@ -90,14 +90,12 @@ a {
 }
 
 .header__container {
-  position: relative;
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .nav {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,9 +104,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  z-index: 2;
-  position: fixed;
-  width: 1440px;
+  max-width: 1440px;
   padding-left: 120px;
   padding-right: 120px;
   padding-top: 10px;
@@ -861,7 +857,7 @@ a {
 }
 
 .we__overlay {
-  width: 1440px;
+  max-width: 1440px;
   height: 498px;
   margin-left: auto;
   margin-right: auto;
@@ -1322,14 +1318,22 @@ a {
   position: fixed;
 }
 
-@media screen and (max-width: 1350px) {
-  .header__box--one {
-    margin-left: auto;
-    margin-right: auto;
+@media screen and (max-width: 1440px) {
+  .footer__nav {
+    padding-left: 120px;
+    padding-right: 120px;
   }
-  .mobile__bar {
-    margin-left: auto;
-    margin-right: auto;
+}
+
+@media screen and (max-width: 1350px) {
+  .we__overlay {
+    max-width: 1380px;
+  }
+  .footer__container {
+    max-width: 1380px;
+  }
+  .nav__footer {
+    max-width: 1380px;
   }
 }
 
@@ -1339,6 +1343,9 @@ a {
   }
   .marka__item {
     width: 340px;
+  }
+  .we__overlay {
+    max-width: 1280px;
   }
   .marka__list--img {
     width: 340px;
@@ -1476,6 +1483,14 @@ a {
   .we__img {
     height: 252px;
   }
+  .nav {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .footer__nav {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 @media screen and (max-width: 950px) {
@@ -1523,15 +1538,18 @@ a {
         -ms-flex-pack: center;
             justify-content: center;
   }
-}
-
-@media screen and (max-width: 950px) {
   .hero__title--box {
     width: 700px;
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 860px) {
+  .header__tel--one {
+    display: none;
+  }
+  .footer__tel--one {
+    display: none;
+  }
   .advantage__item {
     max-width: 400px;
     margin: 30px;
@@ -1604,17 +1622,14 @@ a {
     padding-top: 40px;
     padding-bottom: 40px;
   }
-  .marka__item--one {
-    display: none;
-  }
   .marka__item {
-    width: 400px;
+    width: 250px;
     margin-bottom: 20px;
     margin-bottom: 20px;
   }
   .marka__list--img {
-    width: 400px;
-    height: 370px;
+    width: 250px;
+    height: 230px;
   }
   .pay__btn {
     width: 130px;
@@ -1624,6 +1639,9 @@ a {
     padding-top: 15px;
     padding-bottom: 15px;
     margin: 0;
+  }
+  .pay__box {
+    width: 600px;
   }
   .pay__box--text {
     margin-bottom: 15px;
@@ -1650,6 +1668,95 @@ a {
   .we__img {
     display: none;
   }
+  .header__tel::after,
+  .header__tel::before {
+    display: none;
+  }
+  .footer__tel::after,
+  .footer__tel::before {
+    display: none;
+  }
+  .footer__nav {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .header__tel--item {
+    display: none;
+  }
+  .footer__tel--item {
+    display: none;
+  }
+  .hero__title {
+    font-size: 38px;
+    text-align: center;
+  }
+  .hero__text {
+    text-align: center;
+  }
+  .hero__title--box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pay__box {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .marka__item {
+    width: 200px;
+  }
+  .marka__list--img {
+    width: 200px;
+    height: 170px;
+  }
+  .pay__box {
+    width: 430px;
+  }
+  .hero__title--box {
+    padding-top: 28px;
+    width: 420px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .logo {
+    width: 130px;
+  }
+  .footer__logo {
+    width: 130px;
+  }
+  .pay__box {
+    width: 300px;
+  }
+  .hero__title--box {
+    padding-top: 20px;
+    width: 300px;
+  }
+  .hero__title {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 12px;
+  }
 }
 
 .footer__container {
@@ -1658,7 +1765,7 @@ a {
   margin-right: auto;
 }
 
-.nav__footer {
+.footer__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1667,9 +1774,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 1440px;
-  padding-left: 120px;
-  padding-right: 120px;
+  max-width: 1440px;
   padding-top: 10px;
   padding-bottom: 10px;
   -webkit-box-align: center;
