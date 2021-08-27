@@ -231,3 +231,31 @@
 .logo {
   display: inline-block;
 }
+.box__menu--one {
+  display: none;
+}
+.menu__list--one {
+  transition: ease 1s all;
+  transform: translateX(-420px);
+
+  z-index: 4;
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  // width: 400px;/
+  height: 50px;
+  margin: 0;
+  // padding: 0 15px;
+
+  // flex-direction: column;
+  background: #c4c4c4;
+  opacity: 0;
+}
+
+.menu__list--one.active {
+  opacity: 1;
+  transform: translateX(0);
+
+  // background: white;
+}

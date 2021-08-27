@@ -16,11 +16,13 @@
 .form {
   top: 121px;
   left: 50%;
-  width: 528px;
+  max-width: 528px;
   height: 450px;
   position: absolute;
   background-color: #ffffff;
-  transform: translatex(-50%);
+  transform: translateX(-50%);
+  // margin-left: auto;
+  // margin-right: auto;
   // position: fixed;
   // z-index: 4;
 }

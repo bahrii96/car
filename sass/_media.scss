@@ -389,6 +389,16 @@
     align-items: center;
     align-content: center;
   }
+  .menu__list.active {
+    width: 250px;
+    // height: 500px;
+  }
+     .form {
+    width: 450px;
+  }
+  .form-field .form-input {
+    width: 390px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -399,6 +409,7 @@
     // margin-left: 0;
     display: block;
   }
+   }
 }
 
 @media screen and (max-width: 550px) {
@@ -422,6 +433,12 @@
   .advantage__item {
     width: 155px;
     margin: 10px;
+  }
+  .form {
+    width: 390px;
+  }
+  .form-field .form-input {
+    width: 320px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -521,7 +538,70 @@
   .footer__list {
     display: none;
   }
-  .menu__list {
+
+  .box__menu {
     display: none;
+  }
+  .box__menu--one {
+    display: flex;
+  }
+  .nav {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+    .form {
+    width: 320px;
+  }
+  .form-field .form-input {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .hero__title--box {
+    // padding-top: 5px;
+    padding-top: 28px;
+    width: 240px;
+  }
+  .hero__button {
+    margin-top: 5px;
+
+    width: 100%;
+  }
+  .hero__item {
+    margin-bottom: 5px;
+  }
+  .hero__text {
+    margin-bottom: 5px;
+  }
+  .advantage__item--img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .services__box {
+    padding-top: 10px;
+  }
+  .services__title {
+    font-size: 38px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+  .marka__title {
+    font-size: 38px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+  .we__box--text {
+    padding-top: 20px;
+    width: 240px;
+  }
+  .we__title {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    margin-top: 5px;
   }
 }

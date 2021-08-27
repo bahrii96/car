@@ -2,6 +2,13 @@ function toggleMobileMenu() {
     document.querySelector('#menu').classList.toggle('active')
     document.querySelector('.mobile__bar').classList.toggle('active')
 }
+
+// vкнопка меню для мобільного
+function toggleMobile() {
+    document.querySelector('#mobile').classList.toggle('active')
+    document.querySelector('.mobile__bar').classList.toggle('active')
+}
+
 function toggleRegistration() {
     document.querySelector('#form').classList.toggle('active')
     document.querySelector('.registration').classList.toggle('active')
@@ -45,8 +52,8 @@ function toggleEurope() {
 }
 
 
-// кнопка закрити 
-
+ 
+// переключення меню в секції марка
  var HIDDEN_CLASS_NAME = 'hidden'
 var TARGET_CLASS_NAME = 'target'
 var SOURCE_CLASS_NAME = 'source'
@@ -98,5 +105,6 @@ function showTarget(targets, targetId) {
 		}
 	})
 }
-
+ 
 main()
+ 
