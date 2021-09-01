@@ -368,6 +368,55 @@ a {
   line-height: 59px;
   color: #1f1c1c;
   margin-bottom: 32px;
+  -webkit-animation: VADIM;
+          animation: VADIM;
+}
+
+.hero-spam {
+  -webkit-animation: neon 15s infinite;
+          animation: neon 15s infinite;
+}
+
+@-webkit-keyframes neon {
+  0% {
+    color: #6969f1;
+  }
+  25% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  50% {
+    color: red;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  75% {
+    color: green;
+  }
+  100% {
+    color: #ac3e94;
+  }
+}
+
+@keyframes neon {
+  0% {
+    color: #6969f1;
+  }
+  25% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  50% {
+    color: red;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  75% {
+    color: green;
+  }
+  100% {
+    color: #ac3e94;
+  }
 }
 
 .hero__text {
@@ -1744,6 +1793,12 @@ a {
   .menu__list.active {
     width: 250px;
   }
+  .form {
+    width: 450px;
+  }
+  .form-field .form-input {
+    width: 390px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -1752,9 +1807,6 @@ a {
   }
   .marka__item--item {
     display: block;
-  }
-  .form {
-    width: 528px;
   }
 }
 
@@ -1886,6 +1938,12 @@ a {
   .nav {
     padding-left: 12px;
     padding-right: 12px;
+  }
+  .form {
+    width: 320px;
+  }
+  .form-field .form-input {
+    width: 250px;
   }
 }
 

@@ -42,6 +42,29 @@
 
   color: #1f1c1c;
   margin-bottom: 32px;
+  animation: VADIM;
+}
+.hero-spam {
+  // color: #e761ca;
+  animation: neon 15s infinite;
+}
+@keyframes neon {
+  0% {
+    color: rgb(105, 105, 241);
+  }
+  25% {
+    transform: rotate(45deg);
+  }
+  50% {
+    color: red;
+    transform: rotate(-45deg);
+  }
+  75% {
+    color: green;
+  }
+  100% {
+    color: #ac3e94;
+  }
 }
 .hero__text {
   font-family: Montserrat;
