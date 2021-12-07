@@ -213,7 +213,7 @@
 .menu__list.active {
   opacity: 1;
   transform: translateX(-22px);
-
+  position: fixed;
   background: white;
 }
 // .menu__list.active .menu__item {

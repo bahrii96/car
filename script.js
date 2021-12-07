@@ -1,31 +1,25 @@
 function toggleMobileMenu() {
     document.querySelector('#menu').classList.toggle('active')
-    document.querySelector('.mobile__bar').classList.toggle('active')
+    // document.querySelector('.mobile__bar').classList.toggle('active')
 }
 
 // vкнопка меню для мобільного
 function toggleMobile() {
     document.querySelector('#mobile').classList.toggle('active')
-    document.querySelector('.mobile__bar').classList.toggle('active')
+    // document.querySelector('.mobile__bar').classList.toggle('active')
 }
 
-function toggleRegistration() {
-    document.querySelector('#form').classList.toggle('active')
-    document.querySelector('.registration').classList.toggle('active')
-//   button.innerText = "Сохранить";
-}
- 
 
 // показати быльше
 
 function toggleMore() {
     document.querySelector('#more').classList.toggle('active')
-    document.querySelector('.marka__more').classList.toggle('active')
+    // document.querySelector('.marka__more').classList.toggle('active')
 }
 // показати більше відгуки
 function toggleReviews() {
     document.querySelector('#reviews').classList.toggle('active')
-    document.querySelector('.reviews__more').classList.toggle('active')
+    // document.querySelector('.reviews__more').classList.toggle('active')
 }
 
 // кнопка показати більше
@@ -40,18 +34,40 @@ document.querySelectorAll("button").forEach(function(el){
 })
 
 // Авто на складі
+const availability= document.querySelector('#form_availability')
 function toggleAvailability() {
-    document.querySelector('#form_availability').classList.toggle('active')
-    document.querySelector('.availability').classList.toggle('active')
+   availability.classList.toggle('active')
+    // document.querySelector('.availability').classList.toggle('active')
+}
+function closeFormAvailability() {
+	availability.classList.remove('active')
 }
 
 // авто в європі
+const carInEurope=document.querySelector('#form_europe')
 function toggleEurope() {
-    document.querySelector('#form_europe').classList.toggle('active')
-    document.querySelector('.europe').classList.toggle('active')
+    carInEurope.classList.add('active')
+	
 }
+function closeFormEurope() {
+		carInEurope.classList.remove('active')
+	}
 
+	// РЕГИСТРАЦИЯ
+	const registration=document.querySelector('#form')
+	function toggleRegistration() {
+    registration.classList.toggle('active')
+ 
+}
+function closeFormRegistration() {
+	 registration.classList.remove('active')
+}
+	
+ 
 
+// function closeForm() {
+// document.querySelector('.form-button_button').classList.remove('active')	
+// }
  
 // переключення меню в секції марка
  var HIDDEN_CLASS_NAME = 'hidden'

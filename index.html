@@ -52,11 +52,11 @@
               </a></li>
           </ul>
           <ul class="header__tel"> <li class="header__tel--item header__tel--one">
-              <a href="" class="header__tel--link">+380 73 777 12 01
+              <a href="tel:+380 73 777 12 01" class="header__tel--link">+380 73 777 12 01
 
               </a></li>
               <li class="header__tel--item">
-              <a href="" class="header__tel--link">+380 73 777 12 01
+              <a href="tel:+380 73 777 12 01" class="header__tel--link">+380 73 777 12 01
 
               </a></li>
           </ul>
@@ -139,8 +139,8 @@
               <li class="hero__item">Швидка і безкоштовна реєстрація</li>
             </ul>
             <div data-aos="fade-up">
-              <div class="registration" onclick="toggleRegistration();">
-                <button type="button" class="hero__button">
+              <div class="registration">
+                <button type="button" class="hero__button"  onclick="toggleRegistration();">
                   Зареєструйся безкоштовно
                 </button>
               </div>
@@ -695,8 +695,8 @@ availability" onclick="toggleAvailability();" >
   <div class="we__box--box  ">
         <div class="we__img--box">
             <div data-aos="fade-up-right">
-        <img src="./images/we_grey.jpg" alt="автомобіль" width="590" height="332" class="we__img"></div></div>
-       <div class="we__img--box"> <div data-aos="fade-up-left"><img src="./images/we_wreet.jpg" alt="автомобіль" width="590" height="332" class="we__img"></div>
+        <img src="./images/we_grey.jpg" alt="автомобіль" width="590" height="332" class="we__img" onclick="toggleEurope();"></div></div>
+       <div class="we__img--box"> <div data-aos="fade-up-left"><img src="./images/we_wreet.jpg" alt="автомобіль" width="590" height="332" class="we__img" onclick="toggleAvailability();"></div>
 
 </div></div>
 
@@ -840,9 +840,10 @@ availability" onclick="toggleAvailability();" >
    <img src="./images/form/mail.svg" alt="" class="icon" width="15px"></div>
    <button type="submit" class="form-button">Отправить</button>
               <button
-                type="submit"
+              id
+                type="button"
                 class="btn cancel form-button_button"
-                onclick="closeForm()"
+                onclick="closeFormRegistration()"
               ></button>
             </form>
           </div>
@@ -910,9 +911,9 @@ availability" onclick="toggleAvailability();" >
               </div>
               <button type="submit" class="form-button">Отправить</button>
               <button
-                type="submit"
+                type="button"
                 class="btn cancel form-button_button"
-                onclick="closeForm()"
+                onclick="closeFormAvailability()"
               ></button>
             </form>
           </div>
@@ -979,9 +980,9 @@ availability" onclick="toggleAvailability();" >
               </div>
               <button type="submit" class="form-button">Отправить</button>
               <button
-                type="submit"
+              type="button"
                 class="btn cancel form-button_button"
-                onclick="closeForm()"
+                onclick="closeFormEurope()"
               ></button>
             </form>
           </div>

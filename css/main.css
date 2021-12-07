@@ -294,6 +294,7 @@ a {
   opacity: 1;
   -webkit-transform: translateX(-22px);
           transform: translateX(-22px);
+  position: fixed;
   background: white;
 }
 
